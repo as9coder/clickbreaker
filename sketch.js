@@ -18,6 +18,7 @@ function setup() {
 function draw() 
 {
   background(30);
+  frameRate(1);
 
   textSize(30);
   fill("red");
