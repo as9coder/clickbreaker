@@ -25,9 +25,10 @@ function draw()
   textSize(20);
   text("CLICKED: "+count+" Times", width-250, height/9);
 
-  if(mousePressedOver(click)){
+  if(touches.length > 0||mousePressedOver(click)){
     count-=1;
     local();
+    touches = [];
   }
 
   if(count<=0){
